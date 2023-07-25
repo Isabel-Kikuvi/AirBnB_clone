@@ -1,36 +1,44 @@
 section.filters {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    display: flex;
+	color: #fff;
+    	height: 70px;
+    	width: 100%;
+    	border: 1px solid #dddddd;
+    	border-radius: 4px;
+    	position: relative;
+
 }
-section.filters button {
-    font-size: 18px;
-    background-color: #FF5A5F;
-    color: #FFFFFF;
-    height: 48px;
-    width: 20%;
-    border: 0;
-    border-radius: 4px;
-    margin: auto 30px;
+button {
+	font-size: 18px;
+    	background-color: #FF5A5F;
+    	color: white;
+    	height: 48px;
+    	width: 20%;
+   	border: none;
+    	border-radius: 4px;
+    	position: absolute;
+    	right: 30px;
+    	top: 50%;
+    	transform: translateY(-50%);
 }
 section.filters button:hover {
-    opacity: 90%;
+    	opacity: 90%;
 }
-section.filters div.locations, section.filters div.amenities {
-    height: 100%;
-    width: 25%;
-    border-right: 1px solid #DDDDDD;
-    
+
+.filters .locations, .filters .amenities {
+    	height: 100%;
+    	width: 25%;
+    	color:black;
+    	border-right: 1px solid #dddddd;
+    	display: inline-block;
+    	text-align: center;
 }
-div.locations h3, div.amenities h3  {
-    font-weight: 600;
-    margin-bottom: 0px;
+.filters .locations h3, .filters .amenities h3 {
+    	font-weight: bold;
+    	margin: 0;
+   	margin-top: 10px;
 }
-div.locations h4, div.amenities h4 {
-    font-weight: 400;
-    font-size: 14px;
-    margin: 4px auto;
+.filters .locations h4, .filters .amenities h4 {
+    	font-weight: 400;
+    	font-size: 14px;
+    	padding-bottom: 40%;
 }
