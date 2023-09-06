@@ -10,6 +10,7 @@ from console import HBNBCommand
 from io import StringIO
 from unittest.mock import patch
 
+
 class TestHBNBCommand_exit(unittest.TestCase):
     """Unittests for testing exiting from the HBNB command interpreter."""
 
@@ -20,6 +21,7 @@ class TestHBNBCommand_exit(unittest.TestCase):
     def test_EOF_exits(self):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertTrue(HBNBCommand().onecmd("EOF"))
+
 
 if __name__ == "__main__":
     unittest.main()
